@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full viewport height */
+}
+
+.navbar {
+    overflow: hidden;
+    background-color:black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.logo img {
+    height: 50px; /* Adjust height as needed */
+}
+
+.navbar .nav-links {
+    text-align: right;
+}
+
+.navbar a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.main {
+    /* Adjust based on navbar height and spacing */
+    color: white;
+    text-align: center; /* Center text horizontally */
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to keep cards in one line */
+    justify-content: space-between; /* Add space between cards */
+    gap: 20px;
+    overflow-x: auto; /* Add horizontal scroll for extra cards */
+}
+
+.card {
+    width: calc(25% - 20px); /* Adjust card width here */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.card-text {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+}
+.text {
+    color: white; /* Setting text color */
+    text-align: center; /* Centering text */
+    padding: 20px;
+    margin-top: 3rem;
+}
+
+.text h1 {
+    font-size: 28px; /* Setting font size */
+    margin: 10px 0; /* Adding margin to separate headings */
+}
+
+.text span {
+    color: #007bff; /* Changing color of the span text */
+    font-weight: bold; /* Making span text bold */
+}
+
+.text p {
+    font-size: 18px; /* Setting font size */
+    line-height: 1.6; /* Adding line height for better readability */
+    margin-bottom: 0; /* Removing bottom margin to prevent extra space */
+}
+
+.content {
+padding: 20px;
+text-align: center;
+}
+
+footer {
+color: #fff;
+padding: 20px 0;
+text-align: center;
+}
+
+.footer-content {
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+flex-direction: column; /* Display the content in a column */
+}
+
+.footer-line {
+margin-bottom: 10px; /* Add some space between the lines */
+}
+
+
+.animated-content {
+  text-align: center;
+  background-color: black; /* Adjust background color as needed */
+  border-radius: 10px; /* Adjust border radius as needed */
+}
+
+.animated-content h2 {
+  font-size: 24px; /* Adjust font size as needed */
+}
+
+.animated-content p {
+  font-size: 18px; /* Adjust font size as needed */
+}
+
+/* Animation */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animated-content {
+  animation: slideInFromLeft 1s ease-out; /* Adjust animation duration as needed */
+}
+.custom-container {
+  margin-top: 4rem!important;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.custom-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.custom-container p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+.container {
+max-width: 800px;
+margin: 50px auto;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.person {
+display: flex;
+align-items: center;
+}
+
+.person-image img {
+width: 275px;
+height: auto;
+margin-right: 20px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.person-details {
+color:white;
+flex: 1;
+display: flex;
+flex-direction: column;
+}
+
+.person-bio h2 {
+margin-top: 0;
+}
+
+.person-bio p {
+margin: 5px 0;
+font-size: 16px;
+line-height: 1.6;
+}
+
+.person-contact h3 {
+margin-top: 20px;
+}
+
+.person-contact p {
+margin: 5px 0;
+color: #666;
+font-size: 16px;
+line-height: 1.6;
+}
+
+.person-contact a {
+color: #007bff;
+text-decoration: none;
+}

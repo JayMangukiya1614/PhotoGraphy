@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Full viewport height */
+        }
+        
+        .navbar {
+            overflow: hidden;
+            background-color:black;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+        
+        .logo img {
+            height: 50px; /* Adjust height as needed */
+        }
+        
+        .navbar .nav-links {
+            text-align: right;
+        }
+        
+        .navbar a {
+            display: inline-block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        .main {
+            /* Adjust based on navbar height and spacing */
+            color: white;
+            text-align: center; /* Center text horizontally */
+            padding: 20px;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: nowrap; /* Prevent wrapping to keep cards in one line */
+            justify-content: space-between; /* Add space between cards */
+            gap: 20px;
+            overflow-x: auto; /* Add horizontal scroll for extra cards */
+        }
+
+        .card {
+            width: calc(25% - 20px); /* Adjust card width here */
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+
+        .card-text {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+        }
+        .text {
+            color: white; /* Setting text color */
+            text-align: center; /* Centering text */
+            padding: 20px;
+            margin-top: 3rem;
+        }
+
+        .text h1 {
+            font-size: 28px; /* Setting font size */
+            margin: 10px 0; /* Adding margin to separate headings */
+        }
+
+        .text span {
+            color: #007bff; /* Changing color of the span text */
+            font-weight: bold; /* Making span text bold */
+        }
+
+        .text p {
+            font-size: 18px; /* Setting font size */
+            line-height: 1.6; /* Adding line height for better readability */
+            margin-bottom: 0; /* Removing bottom margin to prevent extra space */
+        }
+        
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Display the content in a column */
+}
+
+.footer-line {
+    margin-bottom: 10px; /* Add some space between the lines */
+}
+
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo">
+        <a href="index.html" class="logo ">
+            <i class="bi bi-camera" style="color: aquamarine;"></i>
+            <h>PhotoFolio</h>
+        </a>
+    </div>
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="header-social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+</div>
+<div class="text">
+    <h1>I'm <span>Jenny Wilson</span> a Professional </h1>
+        <h1>Photographer from New York City</h1>
+    <p>Blanditiis praesentium aliquam illum tempore incidunt debitis dolorem magni est deserunt sed qui libero. Qui voluptas amet.</p>
+          
+</div>
+<div class="main">
+    <div class="card-container">
+        <div class="card">
+            <img src="assets/img/gallery/gallery-1.jpg" alt="Image 1">
+        </div>
+        <div class="card">
+            <img src="assets/img/gallery/gallery-2.jpg" alt="Image 2">
+        </div>
+        <div class="card">
+            <img src="assets/img/gallery/gallery-3.jpg" alt="Image 3">
+        </div>
+        <div class="card">
+            <img src="assets/img/gallery/gallery-4.jpg" alt="Image 4">
+        </div>
+    </div>
+    <div class="card-container" style="margin-top:2rem;">
+        <div class="card">
+            <img src="assets/img/gallery/gallery-5.jpg" alt="Image 1">
+        </div>
+        <div class="card">
+            <img src="assets/img/gallery/gallery-6.jpg" alt="Image 2">
+        </div>
+        <div class="card">
+            <img src="assets/img/gallery/gallery-7.jpg" alt="Image 3">
+        </div>
+        <div class="card">
+            <img src="assets/img/gallery/gallery-8.jpg" alt="Image 4">
+        </div>
+    </div>
+    <div class="card-container" style="margin-top:2rem;">
+        <div class="card">
+            <img src="assets/img/gallery/gallery-9.jpg" alt="Image 1">
+        </div>
+        <div class="card">
+            <img src="assets/img/gallery/gallery-10.jpg" alt="Image 2">
+        </div>
+        <div class="card">
+            <img src="assets/img/gallery/gallery-11.jpg" alt="Image 3">
+        </div>
+        <div class="card">
+            <img src="assets/img/gallery/gallery-12.jpg" alt="Image 4">
+        </div>
+    </div>
+    <div class="card-container" style="margin-top:2rem;">
+        <div class="card">
+            <img src="assets/img/gallery/gallery-13.jpg" alt="Image 1">
+        </div>
+        <div class="card">
+            <img src="assets/img/gallery/gallery-14.jpg" alt="Image 2">
+        </div>
+        <div class="card">
+            <img src="assets/img/gallery/gallery-15.jpg" alt="Image 3">
+        </div>
+        <div class="card">
+            <img src="assets/img/gallery/gallery-16.jpg" alt="Image 4">
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer-content">
+        <div class="footer-line">
+            <p>&copy; 2024 Example Company. All rights reserved.</p>
+            <p>Designed by Vansh Kanani</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

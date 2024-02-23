@@ -1,0 +1,61 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container-fluid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header styles */
+  .header_section {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .header_top {
+    padding: 10px 0;
+  }
+  
+  .contact_link-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact_link-container a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .contact_link-container a:last-child {
+    margin-right: 0;
+  }
+  
+  .header_bottom {
+    padding: 10px 0;
+  }
+  
+  .navbar-brand span {
+    font-size: 24px;
+  }
+  
+  .custom_nav-container .navbar-nav .nav-link {
+    color: #fff;
+    padding: 0 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .custom_nav-container .navbar-nav .nav-link:hover {
+    color: #ffd700;
+  }
+  

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Google Fonts -->
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <title>Contact</title>
+    <style>
+
+    </style>
+</head>
+<style>
+  .google-map {
+    height: 400px;
+    width: 100%;
+  }
+  .page-header {
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+  }
+  .contact-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      margin-top: 40px;
+  }
+  .info-item {
+      text-align: center;
+  }
+  .info-item h4 {
+      margin: 10px 0;
+      color: #333;
+  }
+  .info-item p {
+      color: #777;
+  }
+  .bi {
+      font-size: 24px;
+      margin-bottom: 10px;
+  }
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+
+
+  .container {
+    border-radius: 5px;
+    padding: 20px;
+  }
+  label {
+    color:white;
+  }
+  </style>
+<body>
+
+<div class="navbar">
+    <div class="logo">
+        <a href="index.html" class="logo ">
+            <i class="bi bi-camera" style="color: aquamarine;"></i>
+            <h>PhotoFolio</h>
+        </a>
+    </div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="nature.html">Nature</a>
+        <a href="contact.html" style="color:aquamarine;">Contact</a>
+        <a href="blog.html">Blog</a>
+        
+    </div>
+    <div class="header-social-links">
+      <a href="https://twitter.com/" target = "_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+      <a href="https://www.facebook.com/" target = "_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/" target = "_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.linkedin.com/home" target = "_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+  </div>
+</div>
+<div class="page-header">
+  <h2>Contact</h2>
+  <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+</div>
+
+<div class="container1">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div><script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGJUlSnh56niZZH-YrdDW2q71A4FygrxU&libraries=places&callback=initMap" async defer></script>
+
+<div class="google-map">
+  <iframe
+    width="100%"
+    height="100%"
+    frameborder="0"
+    style="border:0"
+    src="https://www.google.com/maps/embed/v1/place?q=Canada&key=AIzaSyCYUDf-LtzCprb8L1g6w467Fzii9YEp7VE"
+    allowfullscreen>
+  </iframe>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-line">
+            <p>&copy; 2024 Example Company. All rights reserved.</p>
+            <p>Designed by Vansh Kanani</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
